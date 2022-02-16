@@ -55,7 +55,6 @@ public class PhoneBookManagement {
 
 
     public void writeToFileCSV(String s) throws IOException {
-        File file = new File("phonebook.csv");
         FileWriter fileWriter = new FileWriter("phonebook.csv", true);
         BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
         bufferedWriter.write(s);
